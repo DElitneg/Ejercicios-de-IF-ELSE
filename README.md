@@ -1,6 +1,7 @@
 # Ejercicios-de-IF-ELSE
 1,2,3,4,5
 
+//1) "El control de peso de la Razor Crest"
 
 using System;
 using System.Collections.Generic;
@@ -29,9 +30,9 @@ namespace ConsoleApplication2
             }
 
             int diferencia;
-            diferencia = peso - 5000
+            diferencia = peso - 5000;
 
-            if (peso > 5000) 
+            if (peso > 5000)
             {
                 Console.WriteLine("Alerta: Exceso de peso. Debes descargar " + diferencia + " kg para despegar");
             }
@@ -39,3 +40,4 @@ namespace ConsoleApplication2
         }
     }
 }
+
