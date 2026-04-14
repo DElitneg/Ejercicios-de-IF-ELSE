@@ -41,3 +41,47 @@ namespace ConsoleApplication2
     }
 }
 
+
+// 2) Clasificador de Aspirantes a la Academia Jedi 
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            // 2. Clasificador de Aspirantes a la Academia Jedi
+
+            Console.WriteLine("Ingrese la cantidad de midiclorianos ");
+            int midiclorians;
+            midiclorians = Convert.ToInt32(Console.ReadLine());
+
+            if (midiclorians >= 15000)
+            {
+                Console.WriteLine("Potencial Maestro Jedi detectado. Avisar al Consejo");
+            }
+
+            if (midiclorians > 5000)
+            {
+                if (midiclorians < 15000)
+                {
+                    Console.WriteLine("Aceptable para entrenamiento Padawan");
+                }
+            }
+
+            else if (midiclorians <= 5000)
+            {
+                Console.WriteLine("No posee sensibilidad a la Fuerza");
+            }
+
+        }
+    }
+}
+
