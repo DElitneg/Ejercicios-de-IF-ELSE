@@ -196,7 +196,7 @@ namespace ConsoleApplication2
 {
     class Program
     {
-        
+
         static void Main(string[] args)
         {
             // 5. (Jedi, Sith, o Sentinela?)
@@ -214,22 +214,31 @@ namespace ConsoleApplication2
             {
                 Console.WriteLine("El camino del Jedi, elegido has . . . ");
             }
-            if (opcion == 2)
-            {
-                Console.WriteLine("Has despertado un poder que no puedes aprender de un Jedi. . . ");
-            }
-            if (opcion == 3)
-            {
-                Console.WriteLine("Fuerte la Fuerza en ti es, Guardia del Templo . . . (el cristal se vuelve amarillo)");
-            }
 
-            else if (opcion != 1)
+            else
             {
-                if (opcion != 2)
+                if (opcion == 2)
                 {
-                    if (opcion != 3)
+                    Console.WriteLine("Has despertado un poder que no puedes aprender de un Jedi. . . ");
+                }
+                else
+                {
+                    if (opcion == 3)
                     {
-                        Console.WriteLine("Error en la Fuerza: Opcion invalida");
+                        Console.WriteLine("Fuerte la Fuerza en ti es, Guardia del Templo . . . (el cristal se vuelve amarillo)");
+                    }
+                    else
+                    {
+                        if (opcion != 1)
+                        {
+                            if (opcion != 2)
+                            {
+                                if (opcion != 3)
+                                {
+                                    Console.WriteLine("Error en la Fuerza: Opcion invalida (Detecto un disturbio en la Fuerza)");
+                                }
+                            }
+                        }
                     }
                 }
             }
