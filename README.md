@@ -184,5 +184,55 @@ namespace ConsoleApplication2
 }
 
 
+5) ¿Eres un Sith o un Jedi? (Cuestionario de Temperamento)
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            // 5. (Jedi, Sith, o Sentinela?)
+            // 
+            Console.WriteLine("Eres un usuario de la Fuerza, y encuentras un cristal Kyber perdido ");
+            Console.WriteLine("Que haces? (Ingrese 1,2,3");
+            Console.WriteLine("1. Intentas buscar al dueño para devolverselo ");
+            Console.WriteLine("2. Lo corrompes hasta que sangre y se vuelva rojo ");
+            Console.WriteLine("3. Concentras la fuerza para eliminar su oscuridad ");
+
+            int opcion;
+            opcion = Convert.ToInt32(Console.ReadLine());
+
+            if (opcion == 1)
+            {
+                Console.WriteLine("El camino del Jedi, elegido has . . . ");
+            }
+            if (opcion == 2)
+            {
+                Console.WriteLine("Has despertado un poder que no puedes aprender de un Jedi. . . ");
+            }
+            if (opcion == 3)
+            {
+                Console.WriteLine("Fuerte la Fuerza en ti es, Guardia del Templo . . . (el cristal se vuelve amarillo)");
+            }
+
+            else if (opcion != 1)
+            {
+                if (opcion != 2)
+                {
+                    if (opcion != 3)
+                    {
+                        Console.WriteLine("Error en la Fuerza: Opcion invalida");
+                    }
+                }
+            }
+        }
+    }
+}
