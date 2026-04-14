@@ -135,3 +135,54 @@ namespace ConsoleApplication2
     }
 }
 
+
+4) Tienda de Droides de Tatooine
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            // 4. Tienda de Droides de Tatooine
+
+            // Un droide cuesta 2000 créditos. 3 o más, descuento del 20 %
+
+            Console.WriteLine("Cuantos droides desea comprar? ");
+            int droides;
+            droides = Convert.ToInt32(Console.ReadLine());
+
+            int precioDroide;
+            precioDroide = droides * 2000;
+
+            int descuento;
+            descuento = (precioDroide/100)*20;
+          
+            int descuentoTotal;
+            descuentoTotal = precioDroide - (descuento);
+
+            if (droides < 3)
+            {
+                Console.WriteLine("El monto total es de " + precioDroide + " creditos");
+            }
+
+            if (droides >= 3)
+            {
+                Console.WriteLine("El monto original es de " + precioDroide + " creditos, mas el descuento del 20% (" + descuento + " creditos), el total es de " + descuentoTotal + " creditos");
+            }
+
+   
+        }
+    }
+}
+
+
+
+
