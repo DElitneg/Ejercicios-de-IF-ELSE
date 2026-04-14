@@ -85,3 +85,53 @@ namespace ConsoleApplication2
     }
 }
 
+
+// 3) Calculadora de Saltos al Hiperespacio
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            // 3. Calculadora de Saltos al Hiperespacio
+
+            // cada año luz consume 12 litros de combustible.
+
+            Console.WriteLine("A cuantos Años Luz quiere viajar? ");
+            int añosLuz;
+            añosLuz = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Cuantos Litros de cobustible nos quedan? ");
+            int combustible;
+            combustible = Convert.ToInt32(Console.ReadLine());
+
+
+            int diferencia;
+            diferencia = combustible / 12;
+
+            if (diferencia >= añosLuz)
+            {
+                Console.WriteLine("Cálculos precisos. Saltando al hiperespacio");
+            }
+
+
+            int combustibleFaltante;
+            combustibleFaltante = (añosLuz - diferencia) * 12;
+
+            if (diferencia < añosLuz)
+            {
+                Console.WriteLine("Peligro: Combustible insuficiente.Faltan " + combustibleFaltante + " litros de combustible");
+            }
+
+        }
+    }
+}
+
