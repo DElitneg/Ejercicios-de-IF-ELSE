@@ -136,7 +136,7 @@ namespace ConsoleApplication2
 }
 
 
-4) Tienda de Droides de Tatooine
+// 4) Tienda de Droides de Tatooine
 
 using System;
 using System.Collections.Generic;
@@ -184,7 +184,7 @@ namespace ConsoleApplication2
 }
 
 
-5) ¿Eres un Sith o un Jedi? (Cuestionario de Temperamento)
+// 5) ¿Eres un Sith o un Jedi? (Cuestionario de Temperamento)
 
 using System;
 using System.Collections.Generic;
